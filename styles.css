@@ -1,0 +1,230 @@
+body {
+    background: url("background.jpg") repeat;
+    color: #ff00ff;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    width: 90%;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.container {
+    border: 5px solid #ff00ff;
+    background-color: #ffee00;
+    padding: 20px;
+    margin: 20px;
+}
+
+.marquee {
+    color: #0000ff;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.title {
+    color: #ff0000;
+    font-size: 48px;
+    text-decoration: underline;
+}
+
+.main-image {
+    border: 10px solid #0000ff;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 300px; /* Establece el ancho máximo */
+}
+
+.description {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.meme {
+    font-size: 15px;
+    font-weight: 700;
+    color:#ff0000;
+}
+
+.map-container {
+    margin: 20px 0;
+}
+
+.details-title,
+.menu-title {
+    font-size: 32px;
+    color: #ffff00;
+    background-color: #0000ff;
+    padding: 10px;
+}
+
+.details {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #0000ff;
+}
+
+.menu-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.menu-table th,
+.menu-table td {
+    border: 2px solid #ff00ff;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.menu-table th {
+    background-color: #ff0000;
+    color: #ffff00;
+}
+
+.menu-table td {
+    background-color: #00ff00;
+    color: #0000ff;
+}
+
+.menu-image {
+    border: 5px dashed #0000ff;
+    margin: 20px auto;
+}
+
+.footer {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #ff0000;
+    background-color: #0000ff;
+    padding: 10px;
+}
+
+.left-aligned-list {
+    text-align: left;
+    margin-left: 0;
+    padding-left: 20px; /* Ajusta este valor si es necesario */
+}
+
+.left-aligned-list li {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+/* Overlay para mostrar el GIF */
+.gif-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.gif-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .main-image, .menu-image {
+        width: 100%;
+    }
+
+    iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    .title {
+        font-size: 36px;
+    }
+
+    .details-title,
+    .menu-title {
+        font-size: 28px;
+    }
+
+    .details {
+        font-size: 20px;
+    }
+
+    .menu-table th,
+    .menu-table td {
+        font-size: 20px;
+    }
+
+    .footer {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 28px;
+    }
+
+    .details-title,
+    .menu-title {
+        font-size: 24px;
+    }
+
+    .details {
+        font-size: 18px;
+    }
+
+    .menu-table th,
+    .menu-table td {
+        font-size: 18px;
+    }
+
+    .footer {
+        font-size: 16px;
+    }
+}
+
+.responsive-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.responsive-images img {
+    width: 100%;
+    max-width: 600px; /* Puedes ajustar el tamaño máximo según tus necesidades */
+    height: auto;
+    margin-bottom: 20px; /* Espacio entre las imágenes */
+}
+
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.marquee-text {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 10s linear infinite, flash 1.2s infinite;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+}
+
+@keyframes flash {
+    0% { color: red; }
+    20% { color: rgb(255, 255, 255); }
+    40% { color: green; }
+    60% { color: cyan; }
+    80% { color: blue; }
+    100% { color: magenta; }
+}
