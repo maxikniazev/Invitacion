@@ -8,13 +8,12 @@
 body {
     background: url("background.jpg") repeat;
     color: #ff00ff;
-    font-family: 'ComicSansMS', 'Comic Sans MS', cursive, sans-serif;
+    font-family: 'ComicSansMS', sans-serif;
     text-align: center;
     margin: 0 auto;
     padding: 0;
     width: 90%;
 }
-
   
 .container {
     border: 5px solid #ff00ff;
