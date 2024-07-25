@@ -1,13 +1,20 @@
+@font-face {
+    font-family: 'ComicSansMS';
+    src: url('path/to/ComicSansMS3.tff') format('tff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     background: url("background.jpg") repeat;
     color: #ff00ff;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: 'ComicSansMS', 'Comic Sans MS', cursive, sans-serif;
     text-align: center;
-    width: 90%;
-    padding: 0;
     margin: 0 auto;
+    padding: 0;
+    width: 90%;
 }
-
+  
 .container {
     border: 5px solid #ff00ff;
     background-color: #ffee00;
@@ -30,9 +37,7 @@ body {
 
 .main-image {
     border: 10px solid #0000ff;
-    margin: 20px auto;
-    width: 80%;
-    max-width: 300px; /* Establece el ancho máximo */
+   
 }
 
 .description {
@@ -196,7 +201,7 @@ body {
 
 .responsive-images img {
     width: 100%;
-    max-width: 600px; /* Puedes ajustar el tamaño máximo según tus necesidades */
+    max-width: 400px; /* Puedes ajustar el tamaño máximo según tus necesidades */
     height: auto;
     margin-bottom: 20px; /* Espacio entre las imágenes */
 }
